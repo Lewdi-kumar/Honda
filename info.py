@@ -86,6 +86,7 @@ BLACKLIST_WORDS = (
     else []
 )
 
+BLACKLIST_WORDS = ["Tg @ Movies 1stOn ", "www TamilBlasters vip", "Filmy4wap xyz", "www HTPMovies lol", "  ", "|", "HD MOVIEZ", "MG |", "HD MOVIEZ 2 0 ", "mwkOTT ", "CT™ ", "CW ", "CF ", "FHd Movies ", "MEN |•|", "LINKZ", "CC", "[", "]", "[  LINKZ] ", "TheMoviesBoss", "@RunningMoviesHD", "World4ufree1", "www SkymoviesHD", "World4ufree1 icu", "M D B", "company", "HW", "Villa ", "@BollyWeeBHolly", "[D&O]", "[MM]", "[]", "[FC]", "[CF]", "LinkZz", "[DFBC]", "@New_Movie", "Movies2", "MM", "@R A R B G", "[F&T]", "ALL", "New", "zzone", "PIXO", "LiNKS", "group1", "Linkz", "TG", "Telegram", "HEVC", "Rockers", "mm", "LinkzZ", "MS", "Links", "MOVIES" , "LINKS", "HW", "Plus Official", "KHJ", "BEACON", "collections", "MEN", "CINEMA BEACON", "www 4MovieRulz ag", "www 4MovieRulz mu", "www TamilBlastere re", "www 1TamilMV pw", "www 1TamilMV art", "www 1TamilMV", "www 4MovieRulz", "wWw CineMaViLLa", " www DVDWap", "www MovieRulz", "www TamilRockers", "www UncutHD", "𝗧𝗲𝗮𝗺 𝗦𝗮𝗿𝗸𝗮𝗿", "Team Sarkar"]
 LOG_STR = "Current Cusomized Configurations are:-\n"
 LOG_STR += ("IMDB Results are enabled, Bot will be showing imdb details for you queries.\n" if IMDB else "IMBD Results are disabled.\n")
 LOG_STR += ("P_TTI_SHOW_OFF found , Users will be redirected to send /start to Bot PM instead of sending file file directly\n" if P_TTI_SHOW_OFF else "P_TTI_SHOW_OFF is disabled files will be send in PM, instead of sending start.\n")
