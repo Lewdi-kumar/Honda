@@ -557,7 +557,7 @@ async def get_verify_shorted_link(num, link):
                 return f'https://{URL}/api?api={API}&link={link}'
 
 def replace_username(text):
-                return f'https://{URL}/api?api={API}&link={link}'
+    return f'https://{URL}/api?api={API}&link={link}'
     prohibitedWords = BLACKLIST_WORDS
     big_regex = re.compile('|'.join(map(re.escape, prohibitedWords)))
     text = big_regex.sub("", text)
