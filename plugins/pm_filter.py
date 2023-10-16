@@ -232,16 +232,16 @@ async def next_page(bot, query):
             btn.append(
                     [InlineKeyboardButton("☚ 𝗕𝗮𝗰𝗸", callback_data=f"next_{req}_{key}_{off_set}"), InlineKeyboardButton(f"{math.ceil(int(offset)/int(MAX_B_TN))+1} / {math.ceil(total/int(MAX_B_TN))}", callback_data="pages")]
                 )
-            elif off_set is None:
-                btn.append([InlineKeyboardButton("📃 𝗣𝗮𝗴𝗲𝘀", callback_data="pages"), InlineKeyboardButton(f"{math.ceil(int(offset)/int(MAX_B_TN))+1} / {math.ceil(total/int(MAX_B_TN))}", callback_data="pages"), InlineKeyboardButton("𝗡𝗲𝘅𝘁 ➪", callback_data=f"next_{req}_{key}_{n_offset}")])
-            else:
-                btn.append(
-                    [
-                        InlineKeyboardButton("☚ 𝗕𝗮𝗰𝗸", callback_data=f"next_{req}_{key}_{off_set}"),
-                        InlineKeyboardButton(f"🗓 {math.ceil(int(offset)/int(MAX_B_TN))+1} / {math.ceil(total/int(MAX_B_TN))}", callback_data="pages"),
-                        InlineKeyboardButton("𝗡𝗲𝘅𝘁 ☛", callback_data=f"next_{req}_{key}_{n_offset}")
-                    ],
-                )
+        elif off_set is None:
+            btn.append([InlineKeyboardButton("📃 𝗣𝗮𝗴𝗲𝘀", callback_data="pages"), InlineKeyboardButton(f"{math.ceil(int(offset)/int(MAX_B_TN))+1} / {math.ceil(total/int(MAX_B_TN))}", callback_data="pages"), InlineKeyboardButton("𝗡𝗲𝘅𝘁 ➪", callback_data=f"next_{req}_{key}_{n_offset}")])
+        else:
+            btn.append(
+                [
+                    InlineKeyboardButton("☚ 𝗕𝗮𝗰𝗸", callback_data=f"next_{req}_{key}_{off_set}"),
+                    InlineKeyboardButton(f"🗓 {math.ceil(int(offset)/int(MAX_B_TN))+1} / {math.ceil(total/int(MAX_B_TN))}", callback_data="pages"),
+                    InlineKeyboardButton("𝗡𝗲𝘅𝘁 ☛", callback_data=f"next_{req}_{key}_{n_offset}")
+                ],
+            )
     btn.insert(0, [
         InlineKeyboardButton("sᴇɴᴅ ᴀʟʟ", callback_data=f"send_fall#files#{offset}#{req}"),
         InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ", callback_data=f"select_lang#{req}")
